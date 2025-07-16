@@ -28,7 +28,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.10,<4.0"
+python = ">=3.10,<3.13"
 # Core dependencies
 mcp = "^1.10.1"  # Model Context Protocol SDK
 clickhouse-driver = "^0.2.5"  # ClickHouse client
@@ -51,6 +51,8 @@ mkdocstrings = { version = "^0.21.2", extras = ["python"] }  # Documentation gen
 # Optional dependencies
 opentelemetry-instrumentation-fastapi = "^0.55b1"
 ruff = "^0.12.2"
+clickhouse-cityhash = "^1.0.2.4"
+lz4 = "^4.4.4"
 [tool.poetry.extras]
 prod = [
     "gunicorn",
